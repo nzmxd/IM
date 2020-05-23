@@ -1,7 +1,3 @@
-
-
-[TOC]
-
 # IM
 
 基于openfire服务器，使用smcak4.3.4写成仿微信Ui的通用IM客户端。
