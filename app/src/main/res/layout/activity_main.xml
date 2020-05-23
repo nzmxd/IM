@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainTb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f2"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/toolbar_menu">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bbl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@color/color_f0"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/bottom_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/icon_msg"
+            app:iconSelected="@mipmap/icon_msg_selected"
+            app:itemMarginTop="-0dp"
+            app:itemText="消息"
+            app:itemTextSize="8sp"
+            app:textColorNormal="#000"
+            app:textColorSelected="#4CAF50" />
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/bottom_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/tongxunlu"
+            app:iconSelected="@mipmap/tongxunlu_selected"
+            app:itemMarginTop="-0dp"
+            app:itemText="联系人"
+            app:itemTextSize="8sp"
+            app:textColorNormal="#000"
+            app:textColorSelected="#4CAF50" />
+
+        <com.chaychan.library.BottomBarItem
+            android:id="@+id/bottom_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/wodedangxuan"
+            app:iconSelected="@mipmap/wodedangxuan_selected"
+            app:itemMarginTop="-0dp"
+            app:itemText="我"
+            app:itemTextSize="8sp"
+            app:textColorNormal="#000"
+            app:textColorSelected="#4CAF50" />
+
+    </com.chaychan.library.BottomBarLayout>
+
+
+</LinearLayout>
