@@ -54,10 +54,6 @@
 
 <img src="https://i.loli.net/2020/05/24/YgO195LPSWtn7iy.png" alt="image.png" style="zoom:50%;" />
 
-* 好友信息
-
-<img src="https://i.loli.net/2020/05/24/8Rnbc9AuYU46NaS.png" alt="image.png" style="zoom:50%;" />
-
 ---
 
 ## 服务器设置
